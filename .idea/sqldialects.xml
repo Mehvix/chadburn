@@ -4,4 +4,7 @@
     <file url="file://$PROJECT_DIR$/starting.sql" dialect="GenericSQL" />
     <file url="PROJECT" dialect="SQLite" />
   </component>
+  <component name="SqlResolveMappings">
+    <file url="PROJECT" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;79b59288-fed5-4309-b646-8355d0e60d38&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;@negative&quot;:&quot;1&quot;     }    }   }  } }}" />
+  </component>
 </project>
