@@ -11,17 +11,17 @@
 
     <div class="flex-container">
         <div class="flex-child" style="background: #ffffab">
-            <form id="existing" action="viewer.php" method="GET">
+            <form id="existing" action="viewer.php" method="POST">
                 <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
-                <button class="menu hoverer" type="submit" name="submit" style="background: #ffffab">=>
+                <button class="menu hoverer" type="submit" style="background: #ffffab">=>
                 </button>
             </form>
         </div>
 
         <div class="flex-child" style="background: #f39292">
-            <form id="new">
-                <input class="menu" name="new-phrase" id="new-phrase" placeholder="Enter new phrase">
-                <button class="menu hoverer" type="submit" name="submit" id="submit" style="background: #f39292">=>
+            <form id="new" action="create_chat.php" method="POST">
+                <input class="menu" name="new-phrase"" placeholder="Enter new phrase">
+                <button class="menu hoverer" type="submit" style="background: #f39292">=>
                 </button>
             </form>
         </div>

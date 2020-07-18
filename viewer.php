@@ -1,6 +1,6 @@
 <?php
 session_start();
-$phrase = $_GET['phrase'];
+$phrase = $_POST['phrase'];
 if (!$phrase) {
     header('Location: http://localhost/chadburn/');  // todo update
     exit();
@@ -8,7 +8,6 @@ if (!$phrase) {
     $_SESSION['PHRASE']=$phrase;
     try {
         $connect = new PDO('mysql:host=localhost;dbname='.$phrase, 'root', '');
-//        echo 'table dbname exists...';
     } catch (PDOException $e) {
         die("<b>ERROR!</b> There is no chat that corresponds to the phrase <code>" . $phrase . "</code>...");
     }
