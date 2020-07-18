@@ -1,36 +1,56 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content= 
-        "width=device-width, initial-scale=1.0" /> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0"/>
 </head>
 
-<div class="header">
+<div class="header" style="height: 300px">
     <h1 class="header">Chadburn</h1>
-    <div class="column">
-    <button class="b-left hoverer"> Create a new chat ID </button>
+
+    <div class="flex-container">
+        <div class="flex-child" style="background: #ffffab">
+            <input class="menu" name="existing-phrase" id="existing-phrase" placeholder="Enter existing phrase">
+            <button class="menu hoverer" style="background: #ffffab">=></button>
+        </div>
+
+        <div class="flex-child" style="background: #f39292">
+            <input class="menu" name="new-phrase" id="new-phrase" placeholder="Enter new phrase">
+            <button class="menu hoverer" style="background: #f39292">=></button>
+        </div>
     </div>
-    <div class="column">
-    <button class="b-right hoverer"> Open existing chat ID </button>
-    </div>
-    <br><br><br><br><br><br>
-    <h4 class="header">Please.</h4>
+
+
+
+
+    <!--    <div class="b-left" class="column">-->
+    <!--        <button class="hoverer menu">Create a new chat ID</button>-->
+    <!--        <input name="existing-phrase" id="existing-phrase" placeholder="Enter existing phrase">-->
+    <!--    </div>-->
+    <!---->
+    <!--    <div class="b-right" class="column">-->
+    <!--        <button class="hoverer menu">Open existing chat ID</button>-->
+    <!--        <input name="new-phrase" id="new-phrase" placeholder="Enter new phrase">-->
+    <!--    </div>-->
 </div>
 
 <div class="explanation-left">
-    <h3 class="explanation-left">We care about your privacy</h3>
-    <p class="explanation-left">We don't store any of your data. Only the meeting IDs are used to host chats.</p>
+    <h3 class="explanation-left">Privacy First.</h3>
+    <p class="explanation-left">We don't store any identifiable information. The only thing needed to create a chat is a
+        meeting ID.</p>
 </div>
 
 <div class="explanation-right">
-    <h3 class="explanation-right">We connect to an encrypted database</h3>
-    <p class="explanation-right">Each meeting ID will connect directly to its own server. Fast and secure.</p>
+    <h3 class="explanation-right">Security-oriented.</h3>
+    <p class="explanation-right">We've designed with security in mind, and the contents of each chat is hashed such that
+        even we can't read it.</p>
 </div>
 
 <div class="explanation-left">
-    <h3 class="explanation-left">Open-source and easy to use at no cost</h3>
-    <p class="explanation-left">This is a hackathon. We are trying our best.</p>
+    <h3 class="explanation-left">Free as in Speech.</h3>
+    <p class="explanation-left">We have all of our code posted publicly so that you can verify it's legitimacy and host
+        your own instance.</p>
 </div>
 
 </html>
