@@ -8,10 +8,10 @@
 ## todo
 
 **Max**
-- [ ] make create button actually work
-- [ ] make all `GET` into `POSTS`
+- [x] make create button actually work
+- [x] make all `GET` into `POSTS`
 - [ ] actually hash messages
-- [ ] make consts
+- [x] make consts
 - [ ] update all of todos
 - [ ] get everything on server
 - [ ] fix domain?

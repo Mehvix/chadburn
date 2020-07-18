@@ -1,6 +1,9 @@
 <?php
+include_once("consts.php");
+
+
 session_start();
-$connect = new PDO('mysql:host=localhost;dbname='.$_SESSION['PHRASE'], 'root', '');
+$connect = new PDO('mysql:host='.HOST.';dbname='.$_SESSION['PHRASE'], USER, PASSWORD);
 
 
 $query = "

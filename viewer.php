@@ -1,4 +1,6 @@
 <?php
+include_once("consts.php");
+
 session_start();
 $phrase = $_POST['phrase'];
 if (!$phrase) {
@@ -7,7 +9,7 @@ if (!$phrase) {
 } else {
     $_SESSION['PHRASE']=$phrase;
     try {
-        $connect = new PDO('mysql:host=localhost;dbname='.$phrase, 'root', '');
+        $connect = new PDO('mysql:host='.HOST.';dbname='.$phrase, USER, PASSWORD);
     } catch (PDOException $e) {
         die("<b>ERROR!</b> There is no chat that corresponds to the phrase <code>" . $phrase . "</code>...");
     }
