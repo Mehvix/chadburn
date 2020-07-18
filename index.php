@@ -11,17 +11,21 @@
 
     <div class="flex-container">
         <div class="flex-child" style="background: #ffffab">
-            <input class="menu" name="existing-phrase" id="existing-phrase" placeholder="Enter existing phrase">
-            <button class="menu hoverer" style="background: #ffffab">=></button>
+            <form id="existing" action="viewer.php" method="GET">
+                <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
+                <button class="menu hoverer" type="submit" name="submit" style="background: #ffffab">=>
+                </button>
+            </form>
         </div>
 
         <div class="flex-child" style="background: #f39292">
-            <input class="menu" name="new-phrase" id="new-phrase" placeholder="Enter new phrase">
-            <button class="menu hoverer" style="background: #f39292">=></button>
+            <form id="new">
+                <input class="menu" name="new-phrase" id="new-phrase" placeholder="Enter new phrase">
+                <button class="menu hoverer" type="submit" name="submit" id="submit" style="background: #f39292">=>
+                </button>
+            </form>
         </div>
     </div>
-
-
 
 
     <!--    <div class="b-left" class="column">-->
