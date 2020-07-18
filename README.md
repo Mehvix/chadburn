@@ -12,8 +12,8 @@
 - [x] make all `GET` into `POSTS`
 - [ ] actually hash messages
 - [x] make consts
-- [ ] update all of todos
 - [ ] get everything on server
+- [ ] update all of todos
 - [ ] fix domain?
 - [ ] add TOS/privacy policy, etc.
 - [ ] make realtime

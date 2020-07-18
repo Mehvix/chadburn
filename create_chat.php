@@ -33,7 +33,6 @@ try {
 }
 ?>
 
-
 <form id="forward_form" action="viewer.php" method="POST">
     <input type="hidden" name="phrase" value="<?php echo htmlspecialchars($new_phrase); ?>">
 </form>

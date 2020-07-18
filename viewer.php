@@ -7,9 +7,9 @@ if (!$phrase) {
     header('Location: http://localhost/chadburn/');  // todo update
     exit();
 } else {
-    $_SESSION['PHRASE']=$phrase;
+    $_SESSION['PHRASE'] = $phrase;
     try {
-        $connect = new PDO('mysql:host='.HOST.';dbname='.$phrase, USER, PASSWORD);
+        $connect = new PDO('mysql:host=' . HOST . ';dbname=' . $phrase, USER, PASSWORD);
     } catch (PDOException $e) {
         die("<b>ERROR!</b> There is no chat that corresponds to the phrase <code>" . $phrase . "</code>...");
     }
@@ -17,17 +17,18 @@ if (!$phrase) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chat: <?php echo $phrase?></title>
+    <title>Chat: <?php echo $phrase ?></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="static/viewer.js"></script>
 </head>
 <body>
 <br/>
 
-<h2 align="center">Chat:  <code> <?php echo $phrase?> </code></h2>
+<h2 align="center">Chat: <code> <?php echo $phrase ?> </code></h2>
 <br/>
 <div class="container">
     <form method="POST" id="message_form">
@@ -49,41 +50,3 @@ if (!$phrase) {
 </div>
 </body>
 </html>
-
-<script>
-    $(document).ready(function () {
-
-        $('#message_form').on('submit', function (event) {
-            event.preventDefault();
-            var form_data = $(this).serialize();
-            $.ajax({
-                url: "send_message.php",
-                method: "POST",
-                data: form_data,
-                dataType: "JSON",
-                success: function (data) {
-                    if (data.error !== '') {
-                        $('#message_form')[0].reset();
-                        $('#messages').html(data.error);
-                        $('#id').val('0');
-                        load_message();
-                    }
-                }
-            })
-        });
-
-        load_message();
-
-        function load_message() {
-            $.ajax({
-                url: "fetch_message.php",
-                method: "POST",
-                success: function (data) {
-                    $('#display_messages').html(data);
-                }
-            })
-        }
-
-
-    });
-</script>

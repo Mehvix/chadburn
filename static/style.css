@@ -14,7 +14,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     padding: 0px;
     margin: 0px;
-    background-color: #262833;  /* set this to whatever is at the bottom of the page*/
+    background-color: #262833; /* set this to whatever is at the bottom of the page*/
 }
 
 h1.header {
@@ -79,7 +79,7 @@ p.explanation-right {
     width: 50%;
 }
 
-input.menu{
+input.menu {
     height: 40px;
     width: 200px
 }

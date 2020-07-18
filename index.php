@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="static/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="static/script.js"></script>
+    <script src="static/homepage.js"></script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content=
     "width=device-width, initial-scale=1.0"/>
@@ -15,8 +15,7 @@
         <div class="flex-child" style="background: #ffffab">
             <form id="existing" action="viewer.php" method="POST">
                 <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
-                <button class="menu hoverer" type="submit" style="background: #ffffab">=>
-                </button>
+                <button class="menu hoverer" type="submit" style="background: #ffffab">=></button>
             </form>
         </div>
 
