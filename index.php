@@ -8,25 +8,29 @@
 
 <div class="header">
     <h1 class="header">Chadburn</h1>
-    <button class="column"> Create a new chat ID </button>
-    <button class="column"> Open existing chat ID </button>
-    <br><br><br><br><br><br><br><br>
-    <h4 class="header">This is our slogan.</h4>
+    <div class="column">
+    <button class="b-left hoverer"> Create a new chat ID </button>
+    </div>
+    <div class="column">
+    <button class="b-right hoverer"> Open existing chat ID </button>
+    </div>
+    <br><br><br><br><br><br>
+    <h4 class="header">Please.</h4>
 </div>
 
 <div class="explanation-left">
-    <h3 class="explanation-left">This is our first point.</h3>
-    <p class="explanation-left">This is our reasoning.</p>
+    <h3 class="explanation-left">We care about your privacy</h3>
+    <p class="explanation-left">We don't store any of your data. Only the meeting IDs are used to host chats.</p>
 </div>
 
 <div class="explanation-right">
-    <h3 class="explanation-right">This is our second point.</h3>
-    <p class="explanation-right">This is our reasoning.</p>
+    <h3 class="explanation-right">We connect to an encrypted database</h3>
+    <p class="explanation-right">Each meeting ID will connect directly to its own server. Fast and secure.</p>
 </div>
 
 <div class="explanation-left">
-    <h3 class="explanation-left">This is our third point.</h3>
-    <p class="explanation-left">This is our reasoning.</p>
+    <h3 class="explanation-left">Open-source and easy to use at no cost</h3>
+    <p class="explanation-left">This is a hackathon. We are trying our best.</p>
 </div>
 
 </html>
