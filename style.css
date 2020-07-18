@@ -37,40 +37,44 @@ h4.header {
 
 h3.explanation-left {
     text-align: left;
-    padding-left: 30%;
+    padding-left: 20%;
     padding-top: 100px;
     color: #61c0bf;
     font-family: 'Hind Siliguri', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
 }
  
 p.explanation-left {
     color: #bbded6;
     text-align: left;
-    padding-left: 30%;
+    padding-left: 20%;
     padding-bottom: 100px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
 }
 
 h3.explanation-right {
     text-align: right;
-    padding-right: 30%;
+    padding-right: 20%;
     padding-top: 100px;
     color: #61c0bf;
     font-family: 'Hind Siliguri', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
 }
 
 p.explanation-right {
     color: #bbded6;
     text-align: right;
-    padding-right: 30%;
+    padding-right: 20%;
     padding-bottom: 100px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
 }
 
 body { 
@@ -87,6 +91,21 @@ button {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 20px;
-    align-content: center;
+    padding: 20px 48px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hoverer:hover {
+    background: #EEE;
+}
+
+.b-left {
+    margin-left: 50%;
+}
+
+.b-right {
+    margin-right: 50%
 }
