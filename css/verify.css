@@ -1,0 +1,23 @@
+body {
+    background-color: #22242C;
+}
+
+p {
+    color: #fff;
+}
+
+input {
+    background-color: #22242C;
+}
+
+.form-control {
+    background-color: #484c57;
+}
+
+.panel-default {
+    background-color: #484c57;
+}
+
+.panel {
+    background-color: #5e626d;
+}
