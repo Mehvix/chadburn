@@ -1,3 +1,5 @@
+<!--Used for testing (duh)-->
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -6,8 +8,8 @@
     <title>Chadburn | menu</title>
     <!-- Don't forget to add your metadata here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel='stylesheet' href='css/style.min.css'/>
-    <script src="js/homepage.js"></script>
+    <link rel='stylesheet' href='../css/style.min.css'/>
+    <script src="../js/homepage.js"></script>
 </head>
 <body onload="getRandomChars()">
 <!-- Hero unit -->
@@ -25,7 +27,7 @@
                         <div class="flex-container">
                             <div class="flex-child" style="background: #ffffab">
                                 <p>See Existing Chat</p>
-                                <form id="existing" action="verify.php" method="POST">
+                                <form id="existing" action="../verify.php" method="POST">
                                     <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
                                     <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
                                     <button class="menu hoverer" type="submit" style="background: #ffffab">=></button>
@@ -34,7 +36,7 @@
 
                             <div class="flex-child" style="background: #f39292">
                                 <p>Start New Chat</p>
-                                <form id="new" action="create_chat.php" method="POST">
+                                <form id="new" action="../create_chat.php" method="POST">
                                     <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase" value="Generating...">
                                     <input class="menu" name="password" type="password" placeholder="Enter new password"><br>
 
@@ -99,7 +101,7 @@
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__media">
-                <img src="./images/secure.png" class="expanded__image">
+                <img src="../images/secure.png" class="expanded__image">
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Secure.</h2>
@@ -117,7 +119,7 @@
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__media">
-                <img src="./images/privacy.png" class="expanded__image">
+                <img src="../images/privacy.png" class="expanded__image">
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Private</h2>
@@ -135,7 +137,7 @@
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__media">
-                <img src="./images/foss.png" class="expanded__image">
+                <img src="../images/foss.png" class="expanded__image">
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Free as in Speech</h2>
