@@ -422,8 +422,9 @@ p {
 
 h1, h2, h3, h4 {
     margin: 1.414em 0 0.5em;
+    padding-top: 30px;
     line-height: 1.35;
-    color: #e2e2e2;
+    color: #dddddd;
     font-weight: 500;
 }
 
@@ -502,6 +503,7 @@ button, .button {
     background-color: transparent;
     border-radius: 30px;
     margin-bottom: 1.3em;
+    margin-top: 1.3em;
     transition: 0.7s;
     text-align: center;
     text-decoration: none;
@@ -533,29 +535,29 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button__accent {
-    background-color: #06d19c;
-    border-color: #06d19c;
+    background-color: #FBB13C;
+    border-color: #FBB13C;
     color: #fff;
 }
 
 @media (min-width: 992px) {
     .button__accent:hover {
-        background-color: #05bd8d;
-        border-color: #05bd8d;
+        background-color: #eca42f;
+        border-color: #eca42f;
         color: #fff;
     }
 }
 
 .button__delete {
-    background-color: tomato;
-    border-color: tomato;
+    background-color: #FF6B6B;
+    border-color: #FF6B6B;
     color: #fff;
 }
 
 @media (min-width: 992px) {
     .button__delete:hover {
-        background-color: #ff5233;
-        border-color: #ff5233;
+        background-color: #eb5656;
+        border-color: #eb5656;
         color: #fff;
     }
 }
@@ -605,7 +607,7 @@ label {
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
     appearance: none;
     border: 1px solid #eee;
-    width: 100%;
+    width: 80%;
     transition: 0.7s;
     color: #111;
     font-family: "Lato", sans-serif;
@@ -613,8 +615,9 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     padding: 10pt 20pt;
     border-radius: 30px;
     background-color: #f7f7f7;
-    margin-bottom: 1.4em;
-    display: block;
+    margin-top: 1em;
+    display: inline-block;
+
 }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
@@ -1311,7 +1314,7 @@ select::-ms-expand {
 }
 
 .cta--reverse {
-    background: linear-gradient(-10deg, #009a67, #0a557d);
+    background: linear-gradient(-10deg, #4BBCF4, #0a557d);
 }
 
 .cta--plain {

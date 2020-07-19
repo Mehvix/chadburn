@@ -41,8 +41,8 @@
                         private, and secure.</p>
 
                     <div class="flex-container">
-                        <div class="flex-child" style="background: #ffffab">
-                            <p>See Existing Chat</p>
+                        <div class="flex-child" style="background: #262833">
+                            <h3>See Existing Chat</h3>
                             <form id="existing" action="verify.php" method="POST">
                                 <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
                                 <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
@@ -50,8 +50,8 @@
                             </form>
                         </div>
 
-                        <div class="flex-child" style="background: #f39292">
-                            <p>Start New Chat</p>
+                        <div class="flex-child" style="background: #262833">
+                            <h3>Start New Chat</h3>
                             <form id="new" action="create_chat.php" method="POST">
                                 <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase"
                                        value="Generating...">

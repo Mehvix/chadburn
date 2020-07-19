@@ -7,6 +7,17 @@
 
 ## todo
 
+**Color Pallette**
+#4BBCF4 (Bounty)
+#61C0BF (Sea Green)
+#BBDED6 (Oceana)
+#FFB6B9 (Rosada)
+#FAE3D9 (Pink Salt)
+
+#eca42f botton button yellow
+#FF6B6B button button pink
+
+
 **Max**
 - [x] make create button actually work
 - [x] make all `GET` into `POSTS`
