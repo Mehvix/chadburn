@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/homepage.js"></script>
     <!--    <script type="text/javascript" src='js/app.min.js'></script>-->
     <!--    ^used for (deprecated) scroll button-->
-    <link rel='stylesheet' href='css/style.css'/>
+    <link rel='stylesheet' href='css/style.min.css'/>
 
     <!-- Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
