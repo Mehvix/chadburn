@@ -29,11 +29,12 @@ if (!$phrase) {
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
                 <script src="js/viewer.js"></script>
+                <link rel='stylesheet' href='css/verify.css'/>
             </head>
             <body>
             <br/>
 
-            <h2 align="center">Chat: <code> <?php echo $phrase ?> </code></h2>
+            <h2 align="center"><p>Chat: <code> <?php echo $phrase ?> </code></h2>
             <br/>
             <div class="container">
                 <form method="POST" id="message_form">

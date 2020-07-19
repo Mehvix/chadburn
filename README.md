@@ -33,6 +33,7 @@
 - [ ] add TOS/privacy policy, etc.?
 - [ ] make realtime
 - [ ] implement expiration system
+- [ ] remove lorum ipsum
 
 **Emily**
 - [x] update colors
@@ -40,6 +41,6 @@
 - [x] make button hover work (srory agh)
 - [x] make `<p>`  not go on forever on homepage
 - [ ] make buttons not ugly
-- [ ] make logo
+- [x] make logo
 - [ ] add styling to viewer (background?)
 - [ ] add content to this doc
