@@ -34,7 +34,6 @@ h4.header {
 .explanation-left {
     background: #262833;
     margin: 0px;
-    text-align: center;
 }
 
 .explanation-right {
@@ -81,7 +80,18 @@ p.explanation-right {
 
 input.menu{
     height: 40px;
-    width: 200px
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-block-start: 3px;
+    padding-block-end: 3px;
+}
+
+input.menu:hover {
+    border: 1px solid #000000;
+    border-radius: 2px;
 }
 
 button.menu {
@@ -90,6 +100,11 @@ button.menu {
     cursor: pointer;
     font-size: 24px;
     /*border-radius: 8px;*/
+    border: 2px solid #000000;
+    border-radius: 2px;
+    padding-block-start: 3px;
+    padding-block-end: 3px;
+    height: 40px;
 }
 
 button.menu:hover {
@@ -110,15 +125,22 @@ button.menu:hover {
 
 .flex-container {
     display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .flex-child {
     flex: 1;
-    padding: 25px;
+    border: 4px solid #000000;
+    border-radius: 5px;
 }
 
 .flex-child:first-child {
     margin-right: 20px;
+}
+
+form {
+    display: block;
+    margin-top: 1em;
+    margin-block-end: 1em; 
 }
