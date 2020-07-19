@@ -127,12 +127,8 @@
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Free as in Speech.</h2>
-                <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis
-                    libero vitae congue condimentum. Suspendisse potenti. Sed risus risus, ultrices vitae ullamcorper
-                    ut, mattis vel nisi. Cras nulla eros, laoreet non sapien at, pellentesque pulvinar purus. Etiam
-                    venenatis, orci eu ornare eleifend, libero leo sodales orci, et convallis purus lectus vel leo. Sed
-                    non augue ut urna pretium dapibus. Phasellus tortor velit, porttitor euismod metus non, cursus
-                    rhoncus ex.</p>
+                <p class="expanded__text">We believe private communication is essential to a functining society. That's
+                    why our code is open source and our service will always be free.</p>
             </div>
         </div>
     </div>
@@ -145,10 +141,8 @@
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Private.</h2>
-                <p class="expanded__text">We created this website with privacy in mind. We don't track any of your
-                    information, besides the meeting ID and password, which are used to retrieve your conversations
-                    in case you ever need them. Each chatroom is encrypted, so even we can't see your messages.
-                </p>
+                <p class="expanded__text">Your privacy comes first. No personal information is required to a
+                    conversation. By default, we do not keep any IP logs which can be linked to your chat.</p>
             </div>
         </div>
     </div>
@@ -161,9 +155,8 @@
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Secure.</h2>
-                <p class="expanded__text">Our chatrooms are password protected as well as encrypted for an extra
-                    layer of security.
-                </p>
+                <p class="expanded__text">Every password is hashed via <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>
+                    to keep your message contents secure from adversaries.</p>
             </div>
         </div>
     </div>
@@ -172,8 +165,8 @@
 <div class="cta cta--reverse">
     <div class="container">
         <div class="cta__inner">
-            <h2 class="cta__title">Start messaging now</h2>
-            <p class="cta__sub cta__sub--center">Use this hosted instance, or download and run it yourself!</p>
+            <h2 class="cta__title">Start messaging now:</h2>
+            <p class="cta__sub cta__sub--center">Use our instance or download and host it yourself.</p>
             <button onclick="scrollToTop()" class="button button__accent">Message Now</button>
             <br>
             <button onclick="location.href='https://github.com/mehvix/chadburn'" class="button button__delete">Download

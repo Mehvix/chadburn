@@ -1326,10 +1326,12 @@ select::-ms-expand {
 }
 
 .expanded__title {
+    font-size: 2.5em;
     max-width: 550px;
 }
 
 .expanded__text {
+    font-size: 20px ;
     max-width: 60ch;
 }
 
@@ -1353,6 +1355,7 @@ select::-ms-expand {
 }
 
 .cta__title {
+    font-size: 3em;
     color: inherit;
 }
 
@@ -1360,6 +1363,7 @@ select::-ms-expand {
     opacity: 0.85;
     max-width: 58ch;
     margin: 16pt auto 24pt auto;
+    font-size: 1.4em;
 }
 
 .cta__sub--center {
