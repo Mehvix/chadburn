@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Chadburn | menu</title>
     <!-- Don't forget to add your metadata here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel='stylesheet' href='css/style.min.css'/>
-    <script src="js/homepage.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.youtube-background.js?v=1.0.7"></script>
+    <script type="text/javascript" src="js/homepage.js"></script>
+    <link rel='stylesheet' href='css/style.css'/>
 </head>
 <body onload="getRandomChars()">
 <!-- Hero unit -->
-<div class="hero">
+<div class="hero" id="ytbg" data-youtube="https://youtu.be/JflUspLN-7I?t=703">
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            $('[data-youtube]').youtube_background();
+        });
+    </script>
     <div class="hero__overlay hero__overlay--gradient"></div>
     <div class="hero__mask"></div>
     <div class="hero__inner">
@@ -101,10 +107,10 @@
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__media">
-                <img src="./images/secure.png" class="expanded__image" alt="secure">
+                <img src="./images/foss.png" class="expanded__image" alt="secure">
             </div>
             <div class="expanded__content">
-                <h2 class="expanded__title">Secure.</h2>
+                <h2 class="expanded__title">Free as in Speech.</h2>
                 <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis
                     libero vitae congue condimentum. Suspendisse potenti. Sed risus risus, ultrices vitae ullamcorper
                     ut, mattis vel nisi. Cras nulla eros, laoreet non sapien at, pellentesque pulvinar purus. Etiam
@@ -122,7 +128,7 @@
                 <img src="./images/privacy.png" class="expanded__image" alt="privacy">
             </div>
             <div class="expanded__content">
-                <h2 class="expanded__title">Private</h2>
+                <h2 class="expanded__title">Private.</h2>
                 <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales dui non
                     felis viverra luctus. Pellentesque sodales sem arcu. Vivamus ullamcorper gravida sem, sit amet
                     accumsan enim aliquet a. Maecenas sollicitudin imperdiet gravida. Duis egestas augue sit amet nibh
@@ -137,10 +143,10 @@
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__media">
-                <img src="./images/foss.png" class="expanded__image" alt="foss">
+                <img src="./images/secure.png" class="expanded__image" alt="foss">
             </div>
             <div class="expanded__content">
-                <h2 class="expanded__title">Free as in Speech</h2>
+                <h2 class="expanded__title">Secure.</h2>
                 <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut scelerisque
                     lacus. Nunc faucibus dolor ut faucibus posuere. Donec orci nunc, bibendum ut nibh a, venenatis
                     lobortis velit. Phasellus aliquet lorem at urna mollis pellentesque. Mauris et tortor quis neque
@@ -191,8 +197,7 @@
                         <!--todo @emily add devpost-->
                     </div>
                     <div class="footer__row">
-                        <a href="#" class="footer__link">MIT license</a>
-                        <!--todo @emily add this -->
+                        <a href="https://github.com/Mehvix/chadburn/blob/master/LICENSE" class="footer__link">MIT license</a>
                     </div>
                 </div>
             </div>
