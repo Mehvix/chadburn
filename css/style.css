@@ -6,6 +6,29 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+
+/*Scrollbar stuff*/
+*::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px #262833;
+    border-radius: 10px;
+    background-color: #363636;
+}
+
+*::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #363636;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #262833;
+    background-color: #555;
+}
+
 html {
     line-height: 1.15;
     /* 1 */
@@ -21,7 +44,6 @@ html {
 body {
     margin: 0;
     color: #cdcdcd;
-
 }
 
 /**
