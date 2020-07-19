@@ -178,8 +178,11 @@
         <div class="cta__inner">
             <h2 class="cta__title">Start messaging now</h2>
             <p class="cta__sub cta__sub--center">Use this hosted instance, or download and run it yourself!</p>
-            <a onclick="scrollToTop()" class="button button__accent">Message Now</a><br>
-            <a href="https://github.com/mehvix/chadburn" class="button button__delete">Download Chadburn</a>
+            <button onclick="scrollToTop()" class="button button__accent">Message Now</button>
+            <br>
+            <button onclick="location.href='https://github.com/mehvix/chadburn'" class="button button__delete">Download
+                Chadburn
+            </button>
             <!--todo make this go to top of page^-->
         </div>
     </div>

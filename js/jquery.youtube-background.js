@@ -262,7 +262,7 @@ YoutubeBackground.prototype.buildHTML = function () {
 	var wrapper_styles = {
 		"height" : "100%",
 		"width" : "100%",
-		"z-index": "0",
+		"z-index": "-1",
 		"position": "absolute",
 		"overflow": "hidden",
 		"top": 0, // added by @insad
