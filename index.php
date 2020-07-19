@@ -36,33 +36,37 @@
             <div class="hero__content">
                 <div class="hero__content__inner" id='navConverter'>
                     <h1 class="hero__title">Chadburn</h1>
-                    <p class="hero__text">Chadburn is an MIT licensed messaging service. It is extremely lightweight,
-                        private, and secure.</p>
+                    <p class="hero__text">Chadburn is an MIT licensed messaging service with an emphasis on privacy and
+                        security.</p>
 
-                    <div class="flex-container">
-                        <div class="menu-buttons" style="border-radius: 10px 10px 10px 10px">
-                            <h3>See Existing Chat</h3>
-                            <form id="existing" action="verify.php" method="POST">
-                                <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
-                                <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
-                                <button class="menu hoverer" type="submit" style="background: #ffffab">=></button>
-                            </form>
-                        </div>
+                    <div class="menu-containers" style="border-radius: 10px 10px 10px 10px">
+                        <h3>See Existing Chat</h3>
+                        <form id="existing" action="verify.php" style="margin-bottom: 0" method="POST">
+                            <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
+                            <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
+                            <button class="menu hoverer" type="submit" style="background: #FFB6B9">Decrypt Chat</button>
+                        </form>
+                    </div>
 
-                        <div class="menu-buttons" style="border-radius: 10px 10px 75px 10px">
-                            <h3>Start New Chat</h3>
-                            <form id="new" action="create_chat.php" method="POST" style="margin-bottom: 0">
-                                <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase"
-                                       value="Generating...">
-                                <input class="menu" name="password" type="password"
-                                       placeholder="Enter new password"><br>
+                    <div class="menu-containers" style="border-radius: 10px 10px 75px 10px; margin-bottom: 0">
+                        <h3>Start New Chat</h3>
+                        <form id="new" action="create_chat.php" method="POST" style="margin-bottom: 0">
+                            <input class="menu" id="addWords" name="new-phrase" type="text"
+                                   placeholder="Enter new phrase"
+                                   value="Generating...">
+                            <input class="menu" name="password" type="password"
+                                   placeholder="Enter new password"><br>
 
-                                <p>Expiration: </p>
-                                <input type="date" id="expiration" name="expiration"><br>
-                                <button class="menu hoverer" type="submit" style="background: #f39292">=>
-                                </button>
-                            </form>
-                        </div>
+                            <div style="align-content: center">
+                                <p style="font-size: 133%; width: 30%; float: left; margin-left: 20px"> Expiration: </p>
+                                <input style="width: 52%; float: left; margin-right: 0px;" type="date"
+                                       id="expiration" name="expiration"><br>
+                            </div>
+                            <br><br>
+                            <button class="menu hoverer" type="submit" style="background: #61C0BF; margin-right: 33%">
+                                Begin new chat
+                            </button>
+                        </form>
                     </div>
                     <!--                    <a href="#" class="button button__accent">See Existing Chat</a>-->
                     <!--                    <a href="#" class="button hero__button">Start New Chat</a>-->
