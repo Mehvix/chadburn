@@ -1138,6 +1138,7 @@ select::-ms-expand {
     font-style: oblique;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 0;
 }
 
 .hero .button {

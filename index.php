@@ -35,7 +35,10 @@
         <div class="container">
             <div class="hero__content">
                 <div class="hero__content__inner" id='navConverter'>
-                    <h1 class="hero__title">Chadburn</h1>
+                    <div style="display: flex; justify-content: center;">
+                        <img src="images/logo.png" style="height: 80px; float: left; margin-top: 20px;">
+                        <h1 style="float: left" class="hero__title">Chadburn</h1>
+                    </div>
                     <p class="hero__text">Chadburn is an MIT licensed messaging service with an emphasis on privacy and
                         security.</p>
 
@@ -44,7 +47,7 @@
                         <form id="existing" action="verify.php" style="margin-bottom: 0" method="POST">
                             <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
                             <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
-                            <button class="menu hoverer" type="submit" style="background: #FFB6B9">Decrypt Chat</button>
+                            <button class="menu hoverer" type="submit" style="background: #FFB6B9">Decrypt Existing Chat</button>
                         </form>
                     </div>
 
@@ -64,7 +67,7 @@
                             </div>
                             <br><br>
                             <button class="menu hoverer" type="submit" style="background: #61C0BF; margin-right: 33%">
-                                Begin new chat
+                                Begin New Chat
                             </button>
                         </form>
                     </div>
@@ -172,7 +175,6 @@
             <button onclick="location.href='https://github.com/mehvix/chadburn'" class="button button__delete">Download
                 Chadburn
             </button>
-            <!--todo make this go to top of page^-->
         </div>
     </div>
 </div>
@@ -212,8 +214,8 @@
                         <a href="https://github.com/mehvix/chadburn" target="_blank" class="footer__link">GitHub</a>
                     </div>
                     <div class="footer__row">
-                        <a href="" target="_blank" class="footer__link">DevPost</a>
-                        <!--todo @emily add devpost-->
+                        <a href="https://devpost.com/software/chadburn/" target="_blank"
+                           class="footer__link">DevPost</a>
                     </div>
                     <div class="footer__row">
                         <a href="https://github.com/Mehvix/chadburn/blob/master/LICENSE" class="footer__link">MIT
