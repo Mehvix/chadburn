@@ -58,12 +58,13 @@
 <div class="explanation-right">
     <h3 class="explanation-right">Security-oriented.</h3>
     <p class="explanation-right">We've designed with security as a top priority.</p>
+    <img src="./image0.png" width="20%">
 </div>
 
 <div class="explanation-left">
     <h3 class="explanation-left">Free as in Speech.</h3>
-    <p class="explanation-left">We have all of our code posted publicly so that you can verify it's legitimacy and host
-        your own instance.</p>
+    <p class="explanation-left">We have all of our code posted publicly so that <br>you can verify its legitimacy and host
+        your<br> own instance.</p>
     <img src="./image1.png" width="20%">
 </div>
 </body>
