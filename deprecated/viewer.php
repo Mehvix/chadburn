@@ -6,7 +6,7 @@ include_once("consts.php");
 session_start();
 $phrase = $_POST['phrase'];
 if (!$phrase) {
-    header('Location: http://localhost/chadburn/');  // todo update
+    header('Location: http://localhost/');
     exit();
 } else {
     $_SESSION['PHRASE'] = $phrase;

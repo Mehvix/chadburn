@@ -22,31 +22,31 @@
                     <p class="hero__text">Chadburn is an MIT licensed messaging service. It is extremely lightweight,
                         private, and secure.</p>
 
-                    <div class="flex-container">
-                        <div class="flex-child" style="background: #ffffab">
-                            <p>See Existing Chat</p>
-                            <form id="existing" action="verify.php" method="POST">
-                                <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
-                                <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
-                                <button class="menu hoverer" type="submit" style="background: #ffffab">=></button>
-                            </form>
-                        </div>
+                        <div class="flex-container">
+                            <div class="flex-child" style="background: #ffffab">
+                                <p>See Existing Chat</p>
+                                <form id="existing" action="verify.php" method="POST">
+                                    <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
+                                    <input class="menu" name="password" type="password" placeholder="Enter chat's password"><br>
+                                    <button class="menu hoverer" type="submit" style="background: #ffffab">=></button>
+                                </form>
+                            </div>
 
-                        <div class="flex-child" style="background: #f39292">
-                            <p>Start New Chat</p>
-                            <form id="new" action="create_chat.php" method="POST">
-                                <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase" value="Generating...">
-                                <input class="menu" name="password" type="password" placeholder="Enter new password"><br>
+                            <div class="flex-child" style="background: #f39292">
+                                <p>Start New Chat</p>
+                                <form id="new" action="create_chat.php" method="POST">
+                                    <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase" value="Generating...">
+                                    <input class="menu" name="password" type="password" placeholder="Enter new password"><br>
 
-                                <p style="font-size: 75%">Expiration: </p>
-                                <input type="date" id="expiration" name="expiration"><br>
-                                <button class="menu hoverer" type="submit" style="background: #f39292">=>
-                                </button>
-                            </form>
+                                    <p style="font-size: 75%">Expiration: </p>
+                                    <input type="date" id="expiration" name="expiration"><br>
+                                    <button class="menu hoverer" type="submit" style="background: #f39292">=>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <!--                    <a href="#" class="button button__accent">See Existing Chat</a>-->
-                    <!--                    <a href="#" class="button hero__button">Start New Chat</a>-->
+<!--                    <a href="#" class="button button__accent">See Existing Chat</a>-->
+<!--                    <a href="#" class="button hero__button">Start New Chat</a>-->
                 </div>
             </div>
         </div>

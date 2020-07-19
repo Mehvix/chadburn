@@ -13,19 +13,22 @@
 - [x] password system
 - [x] actually hash messages
 - [x] make consts
-- [ ] get everything on server
-    - [ ] update all of todos
+- [x] get everything on server
+    - [x] update all of todos
 - [x] fix domain?
+- [ ] get background
+- [ ] make dark theme again
+- [ ] buttons not ugly
 - [ ] add TOS/privacy policy, etc.?
 - [ ] make realtime
 - [ ] implement expiration system
 
 **Emily**
-- [ ] update colors
-- [ ] fix domain? (not too important atm)
-- [ ] waves?
+- [x] update colors
+- [x] fix domain? (not too important atm)
+- [x] make button hover work (srory agh)
+- [x] make `<p>`  not go on forever on homepage
+- [ ] make buttons not ugly
 - [ ] make logo
-- [ ] make button hover work (srory agh)
-- [ ] make `<p>`  not go on forever on homepage
 - [ ] add styling to viewer (background?)
 - [ ] add content to this doc
