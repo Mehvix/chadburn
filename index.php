@@ -6,10 +6,10 @@
     <title>Chadburn | menu</title>
     <!-- todo add metadata here -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.youtube-background.js?v=1.0.7"></script>
+    <script type="text/javascript" src="js/jquery.youtube-background.js?v=1.0.7"></script>
     <script type="text/javascript" src="js/homepage.js"></script>
-<!--    <script type="text/javascript" src='js/app.min.js'></script>-->
-<!--    ^used for (deprecated) scroll button-->
+    <!--    <script type="text/javascript" src='js/app.min.js'></script>-->
+    <!--    ^used for (deprecated) scroll button-->
     <link rel='stylesheet' href='css/style.css'/>
 
     <!-- Favicon-->
@@ -26,14 +26,10 @@
 </head>
 <body onload="getRandomChars()">
 <!-- Hero unit -->
-<div class="hero" id="ytbg" data-youtube="https://youtu.be/JflUspLN-7I?t=703">
-    <script type="text/javascript">
-        jQuery(document).ready(function () {
-            $('[data-youtube]').youtube_background();
-        });
-        //    todo fix^
-    </script>
-    <div class="hero__overlay hero__overlay--gradient"></div>
+<div class="hero">
+    <div id="ytbg" data-ytbg-fade-in="false" data-youtube="https://youtu.be/JflUspLN-7I?t=703"></div>
+
+    <div style="opacity: 45%" class="hero__overlay hero__overlay--gradient"></div>
     <div class="hero__mask"></div>
     <div class="hero__inner">
         <div class="container">
@@ -44,7 +40,7 @@
                         private, and secure.</p>
 
                     <div class="flex-container">
-                        <div class="flex-child" style="background: #262833">
+                        <div class="menu-buttons" style="border-radius: 10px 10px 10px 10px">
                             <h3>See Existing Chat</h3>
                             <form id="existing" action="verify.php" method="POST">
                                 <input class="menu" name="phrase" type="text" placeholder="Enter existing phrase">
@@ -53,15 +49,15 @@
                             </form>
                         </div>
 
-                        <div class="flex-child" style="background: #262833">
+                        <div class="menu-buttons" style="border-radius: 10px 10px 75px 10px">
                             <h3>Start New Chat</h3>
-                            <form id="new" action="create_chat.php" method="POST">
+                            <form id="new" action="create_chat.php" method="POST" style="margin-bottom: 0">
                                 <input class="menu" id="addWords" name="new-phrase" placeholder="Enter new phrase"
                                        value="Generating...">
                                 <input class="menu" name="password" type="password"
                                        placeholder="Enter new password"><br>
 
-                                <p style="font-size: 75%">Expiration: </p>
+                                <p>Expiration: </p>
                                 <input type="date" id="expiration" name="expiration"><br>
                                 <button class="menu hoverer" type="submit" style="background: #f39292">=>
                                 </button>
@@ -178,7 +174,7 @@
         <div class="cta__inner">
             <h2 class="cta__title">Start messaging now</h2>
             <p class="cta__sub cta__sub--center">Use this hosted instance, or download and run it yourself!</p>
-            <a href="#hero__title" class="button button__accent">Message Now</a><br>
+            <a onclick="scrollToTop()" class="button button__accent">Message Now</a><br>
             <a href="https://github.com/mehvix/chadburn" class="button button__delete">Download Chadburn</a>
             <!--todo make this go to top of page^-->
         </div>
@@ -221,4 +217,11 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('[data-youtube]').youtube_background();
+    });
+</script>
+
 </html>
