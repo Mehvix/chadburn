@@ -4,10 +4,12 @@
     <meta class="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Chadburn | menu</title>
-    <!-- Don't forget to add your metadata here -->
+    <!-- todo add metadata here -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.youtube-background.js?v=1.0.7"></script>
     <script type="text/javascript" src="js/homepage.js"></script>
+<!--    <script type="text/javascript" src='js/app.min.js'></script>-->
+<!--    ^used for (deprecated) scroll button-->
     <link rel='stylesheet' href='css/style.css'/>
 
     <!-- Favicon-->
@@ -26,9 +28,10 @@
 <!-- Hero unit -->
 <div class="hero" id="ytbg" data-youtube="https://youtu.be/JflUspLN-7I?t=703">
     <script type="text/javascript">
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             $('[data-youtube]').youtube_background();
         });
+        //    todo fix^
     </script>
     <div class="hero__overlay hero__overlay--gradient"></div>
     <div class="hero__mask"></div>
@@ -73,14 +76,15 @@
     </div>
 </div>
 
-<div class="hero__sub">
+<!--<div class="hero__sub">
 		<span id="scrollToNext" class="scroll">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                  y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512"
                  style="enable-background:new 0 0 512 512;" xml:space="preserve"><path
                         d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
-</div>
+</div>-->
+
 <!--Steps-->
 <!--<div class="steps landing__section">
     <div class="container">
@@ -174,8 +178,8 @@
         <div class="cta__inner">
             <h2 class="cta__title">Start messaging now</h2>
             <p class="cta__sub cta__sub--center">Use this hosted instance, or download and run it yourself!</p>
-            <a href="#" class="button button__accent">Message Now</a><br>
-            <a href="#" class="button button__delete">Download Chadburn</a>
+            <a href="#hero__title" class="button button__accent">Message Now</a><br>
+            <a href="https://github.com/mehvix/chadburn" class="button button__delete">Download Chadburn</a>
             <!--todo make this go to top of page^-->
         </div>
     </div>
@@ -209,7 +213,8 @@
                         <!--todo @emily add devpost-->
                     </div>
                     <div class="footer__row">
-                        <a href="https://github.com/Mehvix/chadburn/blob/master/LICENSE" class="footer__link">MIT license</a>
+                        <a href="https://github.com/Mehvix/chadburn/blob/master/LICENSE" class="footer__link">MIT
+                            license</a>
                     </div>
                 </div>
             </div>
