@@ -3,7 +3,7 @@ session_start();
 
 include_once("consts.php");
 
-$connect = new PDO('mysql:host='.HOST.';dbname='.$_SESSION['PHRASE'], USER, PASSWORD);
+$connect = new PDO('mysql:host=' . HOST . '; dbname=' . $_SESSION['PHRASE'], USER, PASSWORD);
 
 
 $error = '';
@@ -23,11 +23,7 @@ if (empty($_POST["message_content"])) {
 }
 
 if ($error == '') {
-    $query = "
-         INSERT INTO messages 
-         (message, author) 
-         VALUES (:message, :author)
-         ";
+    $query = "INSERT INTO messages (message, author) VALUES (:message, :author)";
     $statement = $connect->prepare($query);
     $statement->execute(
         array(
