@@ -27,20 +27,23 @@
 - [x] get everything on server
     - [x] update all of todos
 - [x] fix domain?
-- [ ] get background
-- [ ] make dark theme again
-- [ ] buttons not ugly
+- [x] get background
+- [x] make dark theme again
+- [x] buttons not ugly
 - [ ] add TOS/privacy policy, etc.?
 - [ ] make realtime
 - [ ] implement expiration system
-- [ ] remove lorum ipsum
 
 **Emily**
 - [x] update colors
 - [x] fix domain? (not too important atm)
 - [x] make button hover work (srory agh)
 - [x] make `<p>`  not go on forever on homepage
-- [ ] make buttons not ugly
+- [x] make buttons not ugly
 - [x] make logo
-- [ ] add styling to viewer (background?)
-- [ ] add content to this doc
+- [x] add styling to viewer (background?)
+- [x] add content to this doc
+- [ ] submit devposts
+- [ ] fix verify css
+- [ ] remove lorum ipsum
+

@@ -145,12 +145,10 @@
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Private.</h2>
-                <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales dui non
-                    felis viverra luctus. Pellentesque sodales sem arcu. Vivamus ullamcorper gravida sem, sit amet
-                    accumsan enim aliquet a. Maecenas sollicitudin imperdiet gravida. Duis egestas augue sit amet nibh
-                    consequat, quis congue dui congue. Donec euismod augue id urna vehicula scelerisque. Vivamus egestas
-                    ex vel hendrerit rutrum. Nam id feugiat lectus, eget tincidunt massa. Nunc viverra posuere enim nec
-                    imperdiet.</p>
+                <p class="expanded__text">We created this website with privacy in mind. We don't track any of your
+                    information, besides the meeting ID and password, which are used to retrieve your conversations
+                    in case you ever need them. Each chatroom is encrypted, so even we can't see your messages.
+                </p>
             </div>
         </div>
     </div>
@@ -163,11 +161,9 @@
             </div>
             <div class="expanded__content">
                 <h2 class="expanded__title">Secure.</h2>
-                <p class="expanded__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut scelerisque
-                    lacus. Nunc faucibus dolor ut faucibus posuere. Donec orci nunc, bibendum ut nibh a, venenatis
-                    lobortis velit. Phasellus aliquet lorem at urna mollis pellentesque. Mauris et tortor quis neque
-                    laoreet egestas non id leo. Donec maximus tellus id mi pellentesque euismod. Curabitur vitae augue
-                    et mi commodo ullamcorper a quis mi. Curabitur ut feugiat sapien.</p>
+                <p class="expanded__text">Our chatrooms are password protected as well as encrypted for an extra
+                    layer of security.
+                </p>
             </div>
         </div>
     </div>
