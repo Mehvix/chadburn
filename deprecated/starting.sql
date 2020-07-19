@@ -1,3 +1,5 @@
+/*This is outdated and (hopefully) shouldn't need to be used anyways*/
+
 CREATE TABLE IF NOT EXISTS `messages` (
      `id` int(11) primary key auto_increment NOT NULL,
      `message` varchar(2048) NOT NULL,

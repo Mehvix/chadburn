@@ -3,11 +3,11 @@ include_once("consts.php");
 
 
 session_start();
-$connect = new PDO('mysql:host='.HOST.';dbname='.$_SESSION['PHRASE'], USER, PASSWORD);
+$connect = new PDO('mysql:host=' . HOST . ';dbname=' . $_SESSION['PHRASE'], USER, PASSWORD);
 
 
 $query = "
-SELECT * FROM messages 
+SELECT * FROM messages where not id='1'
 ORDER BY id DESC
 ";
 

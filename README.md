@@ -10,13 +10,15 @@
 **Max**
 - [x] make create button actually work
 - [x] make all `GET` into `POSTS`
-- [ ] actually hash messages
+- [x] password system
+- [x] actually hash messages
 - [x] make consts
 - [ ] get everything on server
-- [ ] update all of todos
-- [ ] fix domain?
-- [ ] add TOS/privacy policy, etc.
+    - [ ] update all of todos
+- [x] fix domain?
+- [ ] add TOS/privacy policy, etc.?
 - [ ] make realtime
+- [ ] implement expiration system
 
 **Emily**
 - [ ] update colors

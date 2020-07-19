@@ -3,7 +3,7 @@ session_start();
 
 include_once("consts.php");
 
-$connect = new PDO('mysql:host=' . HOST . ';dbname=' . $_SESSION['PHRASE'], USER, PASSWORD);
+$connect = new PDO('mysql:host=' . HOST . '; dbname=' . $_SESSION['PHRASE'], USER, PASSWORD);
 
 
 $error = '';

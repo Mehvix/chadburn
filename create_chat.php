@@ -2,6 +2,7 @@
 include_once("consts.php");
 
 $new_phrase = ($_POST['new-phrase']);
+$password = ($_POST['password']);
 
 if (!$new_phrase) {
     header('Location: http://' . HOST . '/chadburn/');  // todo update
@@ -21,28 +22,32 @@ try {
     $sql = 'CREATE TABLE `messages` (
              `id` int(11) primary key not null AUTO_INCREMENT,
              `message` varchar(2048) not null,
+             `password` varchar(256),  
              `author` varchar(128) not null,
              `date` timestamp not null default current_timestamp
             )';
     $connect->exec($sql);
 
+    $sql = 'insert into messages (message, password, author) values (\'placeholder\', \'' . password_hash($password, PASSWORD_DEFAULT) . '\', \'placeholder\')';
+    echo $sql;
+    $connect->exec($sql);
+
 
 } catch (PDOException $e) {
-    echo $e->getMessage();
+    echo $e;  // ->getMessage()
     die(); // prevent forwarding
 }
 ?>
 
-<form id="forward_form" action="viewer.php" method="POST">
+<form id="forward_form" action="verify.php" method="POST">
     <input type="hidden" name="phrase" value="<?php echo htmlspecialchars($new_phrase); ?>">
+    <input type="hidden" name="password" value="<?php echo htmlspecialchars($password); ?>">
 </form>
 
 <script type="text/javascript">
-    //Our form submission function.
-    function submitForm() {
+    function submitForms() {
         document.getElementById('forward_form').submit();
     }
 
-    //Call the function submitForm() as soon as the page has loaded.
-    window.onload = submitForm;
+    window.onload = submitForms;
 </script>
